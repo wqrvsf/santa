@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.header {
+    height: 50px;
+    background-color: rgba(141, 31, 82, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+
+.header:hover {
+    opacity: 1;
+}
+
+.section {
+    height: 100vh;
+}
+
+.main {
+    background-image: url(winter.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__item {
+    color: white;
+    text-decoration: none;
+}
+/*
+.wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(64, 224, 208, 0.2);
+}
+*/
+.about {
+    font-weight: 400;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    width: 70%;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+.avatar {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(212, 31, 131, 0.76);
+    flex-shrink: 0;
+    margin-right: 20px;
+    transition: all 1s ease 0s;
+}
+
+.avatar:hover {
+    transform: rotate(20deg);
+}
+
+.avatar__img {
+    height: 100%;
+}
+
+.info {
+    background-color: rgba(87, 61, 121, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid rgba(212, 31, 131, 0.76);
+}
+
+@keyframes run {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: translateX(100px);
+        color: yellow;
+    }
+}
+
+.info__title {
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    animation: run 2s ease infinite alternate;
+}
+
+.info__text {
+    font-size: 20px;
+}
+
+.button {
+    padding: 15px;
+    position: relative;
+    z-index: 100;
+    background-color: rgb(168, 21, 197);
+    border-radius: 10px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1s ease 0s;
+    animation: button 5s 0s both infinite;
+}
+
+.button:hover {
+    box-shadow: 0 0 10px 10px #4a264e;
+    padding: 20px;
+    animation: none;
+}
+
+@keyframes button {
+    0%, 20% {
+        transform: translate3d(0, 0, 0);
+    }
+    10%, 14%, 18%, 2%, 6% {
+        transform: translate3d(-7px, 0, 0);
+    }
+    12%, 16%, 4%, 8% {
+        transform: translate3d(7px, 0, 0);
+    }
+}
+
+.copliment {
+    background-image: url(Noviy-God-2048x1152.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+
+.copliment__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.copliment__img-wrap {
+    height: 40%;
+}
+
+.copliment__img {
+    height: 100%;
+}
+
+.poem {
+    background-image: url(Christmas-Present-JAyJ-2048x1152-MM-100.jpg);
+    background-size: cover;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.poem__title {
+    text-align: center;
+}
+
+.poem__list {
+    display: flex;
+    justify-content: center;
+}
+
+.poem__item {
+    width: 300px;
+    min-height: 580px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #f5f5dc;
+    padding: 20px;
+    margin-right: 30px;
+    transition: all 0.5s ease 0s;
+}
+
+.poem__item:hover {
+    border-color: green;
+    transform: scale(1.1);
+}
+
+.poem__img {
+    height: 300px;
+    width: 100%;
+}
+
+.poem__img-elem {
+    height: 100%;
+}
+
+.form {
+    background-image: url(noviy-god100.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.form__title {
+    margin-bottom: 68px;
+}
+
+.msg__form {
+    width: 600px;
+    background-image: url(noviy-god.jpg);
+    background-position: right center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 40px 40px 65px;
+    position: relative;
+}
+
+.form__content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form__row {
+    margin-bottom: 10px;
+}
+
+.form__title-input {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form__input, .form__message {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.form__message {
+    resize: none;
+    height: 200px;
+}
+
+.form__button-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.form__submit {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #F82137;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.form__img-wrap {
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: -157px;
+}
+
+.form__img {
+    height: 100%;
+}
