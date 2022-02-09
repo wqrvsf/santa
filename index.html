@@ -1,144 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Письмо Деду Ьорозу</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Портфолио</title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <nav class="nav">
-                <a href="#main" class="nav__item">Главная</a>
-                <a href="#copliment" class="nav__item">Поздравление</a>
-                <a href="#poem" class="nav__item">Стихи для Деда Мороза</a>
-                <a href="#msg" class="nav__item">Письмо для Деда Мороза</a>
-            </nav>
+            <div class="container header__container">
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Works</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Blog</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-    <section class="main section" id="main">
-        <div class="about">
-            <div class="avatar">
-                <img src="santa-kla.jpg" alt="" class="avatar__img">
-            </div>
-            <div class="info">
-                <h1 class="info__title">Дед Мороз</h1>
-                <p>
-                    Недалеко от Великого Устюга находится Резиденция-Вотчина Деда Мороза. Дед Мороз приглашает в
-                    путешествие в свою сказку у резных ворот, открывающих вход во владения сказочного волшебника. За
-                    воротами - Тропа Сказок, пройдя
-                    по которой, можно попасть в терем Деда Мороза. Ждут на Вотчине разные аттракционы и развлечения
-                    круглый год. Дед Мороз
-                    со своей свитой и сказочными героями гостям всегда рад, всех встретит, добрым словом приветит,
-                    подарки вручит.
-                    Ощущение доброй сказки останется в душе навсегда и Вам захочется вернуться сюда вновь.
-                </p>
-            </div>
-        </div>
-        <button class="button">Отправить письмо Деду Морозу</button>
-    </section>
-    <section class="copliment section" id="copliment">
-        <div class="copliment__content">
-            <h2 class="copliment__title">С наступающим 2022 годом!</h2>
-            <div class="copliment__pomn">
-                С наступающим тебя Новым годом — 2022, годом надежд и успехов, радостных событий и ярких
-                впечатлений, годом мира и любви, пусть он будет таким — замечательным и добрым! <br>
-                Желаю тебе в грядущем году здоровья, сил и ловкости Тигра,
-                исполнения заветных желаний, только приятных волнений, только счастливых мгновений!
-            </div>
-            <div class="copliment__img-wrap">
-               <img src="tigryonok-19-0.png" alt="" class="copliment__img">
-            </div>
-        </div>
-    </section>
-    <section class="poem section" id="poem">
-        <h2 class="poem__title">НОВОГОДНИЕ СТИХИ</h2>
-        <ul class="poem__list">
-            <li class="poem__item">
-                <div class="poem__img">
-                    <img src="pngwing.com.png" alt="Ель" class="poem__img-elem">
-                </div>
-                <h3 class="poem__subtitle">На пушистой елке</h3>
-                <div class="poem__text">
-                    Новогодние деньки, <br>
-                    Снег морозный, колкий. <br>
-                    Загорелись огоньки <br>
-                    На пушистой елке. <br>
-                    Шар качнулся расписной, <br>
-                    Бусы зазвенели. <br>
-                    Пахнет свежестью лесной <br>
-                    От пушистой ели.
-                </div>
-            </li>
-            <li class="poem__item">
-                <div class="poem__img">
-                    <img src="santa.png" alt="Дед Мороз" class="poem__img-elem">
-                </div>
-                <h3 class="poem__subtitle">Добрый Дедушка Мороз</h3>
-                <div class="poem__text">
-                    Добрый Дедушка Мороз <br>
-                    Бородою весь оброс. <br>
-                    Он спешит сегодня слишком <br>
-                    Вместе с внучкою к детишкам. <br>
-                    С неба падает снежок, <br>
-                    А у дедушки - мешок. <br>
-                    В нём он каждому из нас <br>
-                    По подарочку припас.
-                </div>
-            </li>
-            <li class="poem__item">
-                <div class="poem__img">
-                    <img src="9.png" alt="Снеговик" class="poem__img-elem">
-                </div>
-                <h3 class="poem__subtitle">Снеговик из детской сказки</h3>
-                <div class="poem__text">
-                    Раскраснелась детвора - <br>
-                    Накатала три шара! <br>
-                    Друг на друга их сложили, <br>
-                    И ведро нагромоздили. <br>
-                    Нос - морковка, уголь - глазки, <br>
-                    Снеговик из детской сказки! <br>
-                    Руки - ветки, рот - конфета... <br>
-                    Пусть стоит теперь до лета!
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section class="form section" id="msg">
-        <h2 class="form__title">Письмо деду Морозу</h2>
-        <form action="" class="msg__form">
-            <div class="form__content">
-                <div class="form__row">
-                    <div class="form__title-input">
-                        Введите имя
+        <main class="main">
+            <section class="about">
+                <div class="container about__container">
+                    <div class="about__info">
+                        <h1 class="about__text">Hi, I am John,
+                            Creative Technologist
+                        </h1>
+                        <div class="about__desc">
+                            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </div>
+                        <button class="button">Download Resume</button>
                     </div>
-                    <input type="text" name="" id="" class="form__input">
-                </div>
-                <div class="form__row">
-                    <div class="form__title-input">
-                        Введите адрес
+                    <div class="about__avatar">
+                        <img src="img/avatar.png" alt="" class="about__avatar-img">
                     </div>
-                    <input type="text" name="" id="" class="form__input">
                 </div>
-                <div class="form__row">
-                    <div class="form__title-input">
-                        Напишите письмо деду Морозу
-                    </div>
-                    <textarea name="" id="" class="form__message"></textarea>
-                </div>
-                <div class="form__button-wrap">
-                    <button type="submit" class="form__submit">Отправить письмо</button>
-                </div>
-            </div>
-            <div class="form__img-wrap">
-                <img src="logo-300x300.png" alt="" class="form__img">
-            </div>
-        </form>
-    </section>
+            </section>
+        </main>
     </div>
 </body>
 </html>

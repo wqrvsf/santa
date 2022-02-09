@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.42;
+}
+
+ul, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.container {
+    max-width: 865px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.header__container {
+    max-width: 1032px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav__list {
+    display: flex;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.nav__item {
+    margin-left: 33px;
+}
+
+.about__container {
+    display: flex;
+}
+
+.about__avatar {
+    width: 243px;
+    height: 243px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 106px;
+    margin-top: 140px;
+}
+
+.about__avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about__info {
+    width: 59%;
+}
+
+.button {
+    margin-top: 38px;
+    width: 208px;
+    height: 47px;
+    position: relative;
+    z-index: 100;
+    background-color: #FF6464;
+    border-radius: 2px;
+    color: white;
+}
+
+.about__desc {
+    margin-top: 40px;
+}
+
+.about__text {
+    margin-top: 125px;
+}
